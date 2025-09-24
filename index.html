@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicio Técnico - Ashutech</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Figuras geométricas */
+    .bg-shapes {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .shape {
+      position: absolute;
+      width: 200%; height: 50%;
+      transform: rotate(-10deg);
+      left: -50%;
+    }
+    .shape.blue {
+      background: #1e40af; /* azul fuerte */
+      top: 0;
+    }
+    .shape.green {
+      background: #059669; /* verde fuerte */
+      bottom: 0;
+    }
+  </style>
+</head>
+<body class="relative min-h-screen flex flex-col items-center text-gray-900">
+
+  <!-- Figuras de fondo -->
+  <div class="bg-shapes">
+    <div class="shape blue"></div>
+    <div class="shape green"></div>
+  </div>
+
+  <!-- Contenido -->
+  <section class="w-full text-center py-16 px-6 text-white">
+    <img src="logo.png" alt="Ashutech Logo" class="mx-auto mb-4 w-28 h-28" />
+    <h1 class="text-4xl font-bold">SERVICIO TÉCNICO</h1>
+    <p class="mt-2 font-medium">
+      CAPACITADOS PARA DIAGNOSTICAR Y SOLUCIONAR PROBLEMAS INFORMÁTICOS.
+    </p>
+  </section>
+
+  <!-- Servicios -->
+  <section class="mt-12 max-w-3xl space-y-4 px-6 bg-white rounded-2xl shadow-lg p-6">
+    <div class="flex gap-3">
+      <i data-lucide="check-circle-2" class="text-blue-600 w-6 h-6"></i>
+      <p><strong>Reparaciones y asistencia</strong> para equipos informáticos.</p>
+    </div>
+    <div class="flex gap-3">
+      <i data-lucide="check-circle-2" class="text-blue-600 w-6 h-6"></i>
+      <p><strong>Mantenimiento preventivo</strong> para evitar futuras fallas.</p>
+    </div>
+    <div class="flex gap-3">
+      <i data-lucide="check-circle-2" class="text-blue-600 w-6 h-6"></i>
+      <p>Soporte en <strong>PC, laptops, impresoras, etc.</strong></p>
+    </div>
+    <div class="flex gap-3">
+      <i data-lucide="check-circle-2" class="text-blue-600 w-6 h-6"></i>
+      <p><strong>Montaje de equipos</strong> con garantía de funcionamiento.</p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="mt-12 max-w-2xl bg-white rounded-2xl shadow-lg p-6 text-center mx-4">
+    <h2 class="text-xl font-bold text-blue-900 mb-4">CONTÁCTANOS</h2>
+    <div class="flex flex-col sm:flex-row justify-center gap-6">
+      <div class="flex items-center gap-2">
+        <i data-lucide="phone" class="text-green-600 w-5 h-5"></i>
+        <span>+34 632 25 32 20</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i data-lucide="mail" class="text-red-600 w-5 h-5"></i>
+        <span>ttechashu@gmail.com</span>
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-center gap-6 mt-4">
+      <div class="flex items-center gap-2">
+        <i data-lucide="instagram" class="text-pink-600 w-5 h-5"></i>
+        <span>@ttechashulleida</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i data-lucide="globe" class="text-blue-600 w-5 h-5"></i>
+        <span>ashutech.vercel.app</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botón Final -->
+  <div class="mt-8 mb-12">
+    <button class="bg-blue-700 text-white px-6 py-2 rounded-full shadow-md">
+      Solicitar Servicio
+    </button>
+  </div>
+
+  <script> lucide.createIcons(); </script>
+</body>
+</html>
